@@ -1,6 +1,6 @@
 #include "BigNumCalc.h"
 
-std::list<int> bigNumCalc::buildBigNum(const std::string& numString) {
+std::list<int> BigNumCalc::BuildBigNum(const std::string& numString) {
     std::list<int> result;
     for (char digit : numString) {
         if (isdigit(digit)) {
@@ -10,7 +10,7 @@ std::list<int> bigNumCalc::buildBigNum(const std::string& numString) {
     return result;
 }
 
-std::list<int> bigNumCalc::add(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::add(const std::list<int>& num1, const std::list<int>& num2) {
     std::list<int> result;
     auto it1 = num1.rbegin();
     auto it2 = num2.rbegin();
@@ -33,7 +33,7 @@ std::list<int> bigNumCalc::add(const std::list<int>& num1, const std::list<int>&
     return result;
 }
 
-std::list<int> bigNumCalc::sub(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::sub(const std::list<int>& num1, const std::list<int>& num2) {
     std::list<int> result;
     auto it1 = num1.rbegin();
     auto it2 = num2.rbegin();
@@ -62,7 +62,7 @@ std::list<int> bigNumCalc::sub(const std::list<int>& num1, const std::list<int>&
     return result;
 }
 
-std::list<int> bigNumCalc::mul(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::mul(const std::list<int>& num1, const std::list<int>& num2) {
     std::list<int> result;
     if (num2.size() != 1) {
         return result; // For simplicity, assume num2 is only one digit
