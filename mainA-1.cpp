@@ -3,6 +3,7 @@
 #include <limits>
 #include "Node.h"
 #include "LinkedList.h"
+#include "BigNumCalc.h"
 
 using namespace std;
 
