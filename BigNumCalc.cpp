@@ -2,7 +2,7 @@
 #include <stdexcept>  // Include this in BigNumCalc.cpp
 using namespace std;
 
-std::list<int> bigNumCalc::buildBigNum(const std::string& numString) {
+std::list<int> BigNumCalc::BuildBigNum(const std::string& numString) {
     std::list<int> num;
     for (char digit : numString) {
         num.push_back(digit - '0');
@@ -10,7 +10,7 @@ std::list<int> bigNumCalc::buildBigNum(const std::string& numString) {
     return num;
 }
 
-std::list<int> bigNumCalc::add(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::add(const std::list<int>& num1, const std::list<int>& num2) {
     std::list<int> result;
     auto it1 = num1.rbegin(), it2 = num2.rbegin();
     int carry = 0;
@@ -22,7 +22,7 @@ std::list<int> bigNumCalc::add(const std::list<int>& num1, const std::list<int>&
     return result;
 }
 
-std::list<int> bigNumCalc::sub(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::sub(const std::list<int>& num1, const std::list<int>& num2) {
     std::list<int> result;
     auto it1 = num1.rbegin(), it2 = num2.rbegin();
     int borrow = 0;
@@ -45,7 +45,7 @@ std::list<int> bigNumCalc::sub(const std::list<int>& num1, const std::list<int>&
     return result;
 }
 
-std::list<int> bigNumCalc::mul(const std::list<int>& num1, const std::list<int>& num2) {
+std::list<int> BigNumCalc::mul(const std::list<int>& num1, const std::list<int>& num2) {
     if (num2.size() > 1) {
         // This implementation assumes num2 is a single digit
         throw std::invalid_argument("num2 should be a single digit for multiplication");
