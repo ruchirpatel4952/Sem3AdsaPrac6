@@ -1,6 +1,6 @@
 #include "BigNumCalc.h"
 
-std::list<int> BigNumCalc::BuildBigNum(const std::string& numString) {
+std::list<int> BigNumCalc::buildBigNum(const std::string& numString) {
     std::list<int> result;
     for (char digit : numString) {
         if (isdigit(digit)) {
