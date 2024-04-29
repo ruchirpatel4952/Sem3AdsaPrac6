@@ -4,7 +4,7 @@
 #include <list>
 #include <string>
 
-class bigNumCalc {
+class BigNumCalc {
 public:
     std::list<int> buildBigNum(const std::string& numString);
     std::list<int> add(const std::list<int>& num1, const std::list<int>& num2);

@@ -1,4 +1,4 @@
-#include "bigNumCalc.h"
+#include "BigNumCalc.h"
 
 std::list<int> bigNumCalc::buildBigNum(const std::string& numString) {
     std::list<int> result;
