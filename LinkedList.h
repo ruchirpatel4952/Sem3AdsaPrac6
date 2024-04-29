@@ -5,14 +5,12 @@
 #include <limits>
 
 class LinkedList {
-private:
     Node* head;
 
 public:
-    LinkedList(); // Default constructor
-    LinkedList(int* array, int len); // Constructor from array
-    ~LinkedList(); // Destructor
-
+    LinkedList();
+    LinkedList(int* array, int length);
+    ~LinkedList();
     void insertPosition(int pos, int newNum);
     bool deletePosition(int pos);
     int get(int pos);
